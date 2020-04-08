@@ -8,11 +8,11 @@ namespace csharp
 {
     public interface IProcessingItemsFactory  
     {
-        IProcessingItemsStrategy Create(string name); // Paduodamas suformuoto listo elementas paeiliui (pvz. Conjured... | Backstage....|) ir t.t.
+        IProcessingItemsStrategy Create(string name); // Paduodamas unikalus 
     }
 
     public interface IProcessingItemsStrategy
     {
-        void UpdateQuality(Item item); // Naudojant Strategy metoda iskaidomas atskiro listo elemento apskaiciavimas (Quality ir SellIn)
+        void UpdateQuality(Item item);
     }
 }
